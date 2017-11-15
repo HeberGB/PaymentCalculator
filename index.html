@@ -13,18 +13,18 @@
   <nav id="nav-bar">
     <ul>
       <li>
-        <a id="inicio-btn">Inicio</a>
+        <a id="inicio-btn" onclick="cambiarMain('portada')">Inicio</a>
       </li>
       <li>
-        <a id="fundamentacion-btn">Fundamentación</a>
+        <a id="fundamentacion-btn" onclick="cambiarMain('fundamentacion')">Fundamentación</a>
       </li>
       <li>
-        <a id="esquemas-btn">Calculadora</a>
+        <a id="esquemas-btn" href="#inputs-cal">Calculadora</a>
       </li>
     </ul>
   </nav>
   <main id="main-container">
-    <div class="portada">
+    <div class="portada" id="portada">
       <figure>
         <img src="ipn.png" alt="IPN Logo">
       </figure>
@@ -40,7 +40,7 @@
         <img src="escom.png" alt="ESCOM logo">
       </figure>
     </div>
-    <div class="fundamentacion">
+    <div class="fundamentacion" id="fundamentacion">
       <article id="valor-del-dinero">
         <h3>Valor del dinero en el tiempo</h3>
         <p>
@@ -89,6 +89,13 @@
     </div>
     <div class="calculadora">
       <form id="inputs-cal">
+        <label for="esquema"></label>
+        <select id="esquema">
+          <option value="decreciente">Esquema de amortizaciones iguales a pagos decrecientes</option>
+          <option value="bullet">Esquema tipo bullet</option>
+          <option value="creciente">Esquema de pagos crecientes</option>
+          <option value="iguales">Pagos iguales</option>
+        </select>
         <label for="monto">Monto de la deuda</label>
         <input type="number" id="monto">
         <label for="perido">Periodo</label>
