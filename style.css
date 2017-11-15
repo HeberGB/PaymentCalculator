@@ -1,0 +1,89 @@
+* {
+    font-family: Arial, Helvetica, sans-serif;
+    color: #465368;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+    padding: 0;
+    background-color: #ecfdfa;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+}
+
+a {
+    cursor: pointer;
+}
+
+nav {
+    display: flex;
+    flex-direction: column;
+    background-color: #aaffbd;
+    height: 50px;
+    margin: 0;
+}
+
+nav ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    height: 100%;
+    padding: 0;
+    margin: 0;
+    /* background-color: #68ff89; */
+}
+
+nav ul li{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 0;
+    padding: 0 5px 0 5px; 
+    border-right: solid 1px #84c590;
+    height: 100%;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    background-color: #b9ffaa;
+    width: 300px;
+}
+
+#inputs-cal {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.calculadora {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    flex-direction: column;
+}
+
+.fundamentacion {
+    display: none;
+}
+
+.portada, .portada p {
+    display: flex;
+    flex-direction: row;
+    align-content: center;
+    justify-content: center;
+    text-align: center;
+    font-weight: bold;
+}
+
+img {
+    width: 100px;
+}

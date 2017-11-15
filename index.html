@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Calculadora de Pagos</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <nav id="nav-bar">
+    <ul>
+      <li>
+        <a id="inicio-btn">Inicio</a>
+      </li>
+      <li>
+        <a id="fundamentacion-btn">Fundamentación</a>
+      </li>
+      <li>
+        <a id="esquemas-btn">Calculadora</a>
+      </li>
+    </ul>
+  </nav>
+  <main id="main-container">
+    <div class="portada">
+      <figure>
+        <img src="ipn.png" alt="IPN Logo">
+      </figure>
+      <p>
+        CALCULADORA DE PAGOS
+        <br> ESCUELA SUPERIOR DE CÓMPUTO
+        <br> INSTITUTO POLITÉCNICO NACIONAL
+        <br> GRAJEDA BARRANCO JESÚS HEBER
+        <br> 2CM7
+        <br>
+      </p>
+      <figure>
+        <img src="escom.png" alt="ESCOM logo">
+      </figure>
+    </div>
+    <div class="fundamentacion">
+      <article id="valor-del-dinero">
+        <h3>Valor del dinero en el tiempo</h3>
+        <p>
+          El valor del dinero en el tiempo (en inglés, Time Value of Money, abreviado usualmente como TVM) es un concepto económico
+          basado en la premisa de que un inversor prefiere recibir un pago de una suma fija de dinero hoy, en lugar de recibir
+          el mismo valor nominal en una fecha futura. En particular, si se recibe hoy una suma de dinero, se puede obtener
+          interés sobre ese dinero. Adicionalmente, debido al efecto de inflación, en el futuro esa misma suma de dinero
+          perderá poder de compra.
+        </p>
+        <p>
+          Todas las fórmulas relacionadas con este concepto están basadas en la misma fórmula básica, el valor presente de una suma
+          futura de dinero, descontada al presente. Por ejemplo, una suma FV a ser recibida dentro de un año debe ser descontada
+          (a una tasa apropiada r) para obtener el valor presente, PV. Algunos de los cálculos comunes basados en el valor
+          tiempo del dinero son:
+        </p>
+        <ul>
+          <li>
+            Valor presente (PV) de una suma de dinero que será recibida en el futuro.
+          </li>
+          <li>
+            Valor presente de una anualidad (PVA) es el valor presente de un flujo de pagos futuros iguales, como los pagos que se hacen
+            sobre una hipoteca.
+          </li>
+          <li>
+            Valor presente de una perpetuidad es el valor de un flujo de pagos perpetuos, o que se estima no serán interrumpidos ni modificados
+            nunca.
+          </li>
+          <li>
+            Valor futuro (FV) de un monto invertido (por ejemplo, en una cuenta de depósito) a una cierta tasa de interés.
+          </li>
+          <li>
+            Valor futuro de una anualidad (FVA) es el valor futuro de un flujo de pagos (anualidades), donde se asume que los pagos se
+            reinvierten a una determinada tasa de interés.
+          </li>
+        </ul>
+      </article>
+      <article id="amortizacion">
+        <h3>Amortización</h3>
+        <p>
+          Los activos de una empresa comienzan a perder valor a lo largo del tiempo y esa pérdida se amortiza teniendo en cuenta los
+          años de vida del activo. Las amortizaciones son reducciones en el valor de los activos o pasivos para reflejar
+          en el sistema de contabilidad cambios en el precio del mercado u otras reducciones de valor. Con las amortizaciones,
+          los costes de hacer una inversión se dividen entre todos los años de uso de esa inversión.
+        </p>
+      </article>
+    </div>
+    <div class="calculadora">
+      <form id="inputs-cal">
+        <label for="monto">Monto de la deuda</label>
+        <input type="number" id="monto">
+        <label for="perido">Periodo</label>
+        <input type="number" id="periodo">
+        <label for="tasa-interes">Tasa de interes</label>
+        <input type="number" id="tasa-interes">
+        <input type="button" value="Calcular" onclick="calcular()">
+      </form>
+    </div>
+  </main>
+  <script src="app.js"></script>
+</body>
+
+</html>
