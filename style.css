@@ -63,7 +63,6 @@ nav ul {
     height: 100%;
     padding: 0;
     margin: 0;
-    /* background-color: #68ff89; */
 }
 
 nav ul li{
@@ -114,6 +113,37 @@ form {
     font-weight: bold;
 }
 
+#resultado {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+}
+
+table {
+    background-color: #194e84;
+    border: solid #2b2536 1px;
+    border-radius: 5px;
+    margin: 10px;
+    padding: 10px;
+}
+
+table td{
+    background-color: #a9b7ce;
+    padding: 10px;
+    text-align: center;
+    border-radius: 3px;
+}
+
+table th {
+    color: #e2ffe6;
+    background-color: #0d1e30;
+    border-radius: 5px;
+}
+
+table th:last-of-type {
+    border-right-style: none;
+}
+
 img {
     width: 100px;
 }
@@ -131,4 +161,13 @@ input[type="button"]:active {
 nav li:hover {
     box-shadow: 0 4px #5f8752;
     background-color: #b7ffa0;
+}
+
+tr:hover {
+    transform: scale(1.08);
+    font-weight: bolder;
+}
+
+.none:hover {
+    transform: scale(1);
 }
