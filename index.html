@@ -21,6 +21,9 @@
       <li>
         <a id="esquemas-btn" href="#inputs-cal">Calculadora</a>
       </li>
+      <li>
+        <a id="resumen-btn" onclick="resumen()" href="#resumen">Resumen</a>
+      </li>
     </ul>
   </nav>
   <main id="main-container">
@@ -29,9 +32,9 @@
         <img src="ipn.png" alt="IPN Logo">
       </figure>
       <p>
-        CALCULADORA DE PAGOS
-        <br> ESCUELA SUPERIOR DE CÓMPUTO
         <br> INSTITUTO POLITÉCNICO NACIONAL
+        <br> ESCUELA SUPERIOR DE CÓMPUTO
+        <br> CALCULADORA DE PAGOS
         <br> GRAJEDA BARRANCO JESÚS HEBER
         <br> 2CM7
         <br>
@@ -102,7 +105,7 @@
         <input type="text" id="periodo">
         <label for="tasa-interes">Tasa de interes</label>
         <input type="" id="tasa-interes">
-        <input type="button" value="Calcular" onclick="calcular()">
+        <input type="button" value="Calcular" onclick="construir()">
       </form>
     </div>
     <div id="resultado">

@@ -1,6 +1,6 @@
 * {
     font-family: Arial, Helvetica, sans-serif;
-    color: #465368;
+    color: #575366;
 }
 
 body {
@@ -8,7 +8,7 @@ body {
     flex-direction: column;
     margin: 0;
     padding: 0;
-    background-color: #ecfdfa;
+    background-color: #f0f5f1;
 }
 
 main {
@@ -37,6 +37,8 @@ input {
 
 select {
     margin: 10px;
+    font-weight: bold;
+    color: #180505;
 }
 
 input[type="button"] {
@@ -65,23 +67,31 @@ nav ul {
     margin: 0;
 }
 
-nav ul li{
+nav ul li {
     display: flex;
     flex-direction: column;
     justify-content: center;
     margin: 0;
     padding: 0 5px 0 5px; 
-    border-right: solid 1px #84c590;
+    border-right: solid 2px #575366;
     height: 100%;
     cursor: pointer;
 }
 
+nav ul li a {
+    color: #4c4955;
+}
+
 form {
-    background-color: #b9ffaa;
-    width: 300px;
+    background-color: #6e7dab;
+    width: 320px;
     padding: 50px;
     border-radius: 5px;
-    box-shadow: 3px 3px #a7e599;
+    box-shadow: 4px 4px #48526e;
+}
+
+label {
+    color: #f0f4ff;
 }
 
 #inputs-cal {
@@ -113,30 +123,32 @@ form {
     font-weight: bold;
 }
 
-#resultado {
+#resultado, #resumen {
     display: flex;
     justify-content: center;
     align-content: center;
 }
 
 table {
-    background-color: #194e84;
+    background-color: #575366;
     border: solid #2b2536 1px;
     border-radius: 5px;
-    margin: 10px;
     padding: 10px;
+    margin: 25px;
 }
 
 table td{
     background-color: #a9b7ce;
-    padding: 10px;
+    padding: 25px;
+    border: solid #194e84 1px;
     text-align: center;
     border-radius: 3px;
 }
 
 table th {
     color: #e2ffe6;
-    background-color: #0d1e30;
+    padding: 10px;
+    background-color: #191d32;
     border-radius: 5px;
 }
 
@@ -158,14 +170,14 @@ input[type="button"]:active {
     box-shadow: 3px 4px #4e514d;
 }
 
-nav li:hover {
-    box-shadow: 0 4px #5f8752;
-    background-color: #b7ffa0;
+nav li:hover, nav li a:hover {
+    box-shadow: 0 4px #302e4d;
+    background-color: #8291c0;
+    color: #303755 !important;
 }
 
 tr:hover {
-    transform: scale(1.08);
-    font-weight: bolder;
+    transform: scale(1.03);
 }
 
 .none:hover {
